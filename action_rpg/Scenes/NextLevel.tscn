@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Action RPG Resources/World/GrassBackground.png" type="Texture" id=1]
+[ext_resource path="res://Action RPG Resources/World/Tree.png" type="Texture" id=2]
+[ext_resource path="res://Action RPG Resources/World/Grass.png" type="Texture" id=3]
+[ext_resource path="res://Action RPG Resources/World/Bush.png" type="Texture" id=4]
+[ext_resource path="res://Action RPG Resources/Player/Player.png" type="Texture" id=5]
+[ext_resource path="res://Action RPG Resources/Enemies/Bat.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/NextLevel.cs" type="Script" id=7]
+
+[node name="NextLevel" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Background" type="Node" parent="."]
+
+[node name="GrassBackground" type="Sprite" parent="Background"]
+scale = Vector2( 1, 1.02222 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 320, 180 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree" type="Sprite" parent="Background"]
+position = Vector2( 24, 152 )
+texture = ExtResource( 2 )
+
+[node name="Tree2" type="Sprite" parent="Background"]
+position = Vector2( 96, 8 )
+texture = ExtResource( 2 )
+
+[node name="Tree3" type="Sprite" parent="Background"]
+position = Vector2( 304, 152 )
+texture = ExtResource( 2 )
+
+[node name="Grass" type="Sprite" parent="Background"]
+position = Vector2( 56, 16 )
+texture = ExtResource( 3 )
+
+[node name="Grass2" type="Sprite" parent="Background"]
+position = Vector2( 272, 168 )
+texture = ExtResource( 3 )
+
+[node name="Grass3" type="Sprite" parent="Background"]
+position = Vector2( 296, 64 )
+texture = ExtResource( 3 )
+
+[node name="Grass4" type="Sprite" parent="Background"]
+position = Vector2( -176, -16 )
+texture = ExtResource( 3 )
+offset = Vector2( 200, 136 )
+
+[node name="Bush" type="Sprite" parent="Background"]
+position = Vector2( 48, 104 )
+texture = ExtResource( 4 )
+
+[node name="Bush2" type="Sprite" parent="Background"]
+position = Vector2( 288, 104 )
+texture = ExtResource( 4 )
+
+[node name="Bush3" type="Sprite" parent="Background"]
+position = Vector2( 48, 48 )
+texture = ExtResource( 4 )
+
+[node name="Bush4" type="Sprite" parent="Background"]
+position = Vector2( 240, 160 )
+texture = ExtResource( 4 )
+
+[node name="Tree4" type="Sprite" parent="Background"]
+position = Vector2( 256, 16 )
+texture = ExtResource( 2 )
+
+[node name="Grass5" type="Sprite" parent="Background"]
+position = Vector2( 256, 104 )
+texture = ExtResource( 3 )
+
+[node name="UI" type="Node" parent="."]
+
+[node name="RichTextLabel" type="Label" parent="UI"]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 204.0
+margin_bottom = 96.0
+custom_colors/font_color = Color( 0.00784314, 0.00392157, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.235294, 0.180392, 0.180392, 1 )
+text = "Next Level..."
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bat" type="Sprite" parent="UI"]
+position = Vector2( 216, 88 )
+texture = ExtResource( 6 )
+hframes = 5
+frame = 2
+
+[node name="Player" type="Sprite" parent="UI"]
+position = Vector2( 104, 80 )
+texture = ExtResource( 5 )
+hframes = 60
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

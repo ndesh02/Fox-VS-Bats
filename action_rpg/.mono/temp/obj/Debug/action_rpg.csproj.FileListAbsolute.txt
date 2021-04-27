@@ -1,0 +1,8 @@
+C:\Users\ndesh\action_rpg\.mono\temp\bin\Debug\action_rpg.dll
+C:\Users\ndesh\action_rpg\.mono\temp\bin\Debug\action_rpg.pdb
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.csprojAssemblyReference.cache
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.AssemblyInfoInputs.cache
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.AssemblyInfo.cs
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.csproj.CoreCompileInputs.cache
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.dll
+C:\Users\ndesh\action_rpg\.mono\temp\obj\Debug\action_rpg.pdb

@@ -1,0 +1,34 @@
+using Godot;
+using System;
+
+public class SoftCollision : Area2D
+{
+    // Declare member variables here. Examples:
+    // private int a = 2;
+    // private string b = "text";
+
+    // Called when the node enters the scene tree for the first time.
+    public bool isColliding(){
+        Godot.Collections.Array areas =  (GetOverlappingAreas());
+        return (areas.Count > 0);
+    }
+
+    public Vector2 getPushVector(){
+        Godot.Collections.Array areas =  (GetOverlappingAreas());
+        Vector2 pushVector = Vector2.Zero;
+
+        if(areas.Count > 0){
+            Area2D area = areas[0] as Area2D;
+            pushVector = area.GlobalPosition.DirectionTo(GlobalPosition);
+            pushVector = pushVector.Normalized();
+        }
+
+        return pushVector;
+    }
+
+//  // Called every frame. 'delta' is the elapsed time since the previous frame.
+//  public override void _Process(float delta)
+//  {
+//      
+//  }
+}

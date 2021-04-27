@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Camera2D" type="Camera2D"]
+anchor_mode = 0
+current = true
+process_mode = 0
+smoothing_enabled = true
