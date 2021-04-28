@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ndesh\\action_rpg\\action_rpg.csproj",
+      "projectUniqueName": "C:\\Users\\ndesh\\Fox-VS-Bats\\action_rpg\\action_rpg.csproj",
       "projectName": "action_rpg",
-      "projectPath": "C:\\Users\\ndesh\\action_rpg\\action_rpg.csproj",
+      "projectPath": "C:\\Users\\ndesh\\Fox-VS-Bats\\action_rpg\\action_rpg.csproj",
       "packagesPath": "C:\\Users\\ndesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ndesh\\action_rpg\\.mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\ndesh\\Fox-VS-Bats\\action_rpg\\.mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ndesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
